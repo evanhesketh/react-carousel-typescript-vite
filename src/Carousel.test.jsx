@@ -1,6 +1,6 @@
 import { render, fireEvent } from "@testing-library/react";
 import Carousel from "./Carousel";
-import TEST_IMAGES from "./_testCommon.js";
+import TEST_IMAGES from "./_testCommon.ts";
 
 it("renders without breaking", function () {
   render(<Carousel photos={TEST_IMAGES} title="images for testing" />);

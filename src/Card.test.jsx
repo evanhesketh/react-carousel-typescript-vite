@@ -1,6 +1,6 @@
 import Card from "./Card.tsx";
 import { render } from "@testing-library/react";
-import TEST_IMAGES from "./_testCommon.js";
+import TEST_IMAGES from "./_testCommon.ts";
 
 it("renders without crashing", function () {
   render(
