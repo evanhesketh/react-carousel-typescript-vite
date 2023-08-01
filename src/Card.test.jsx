@@ -1,5 +1,5 @@
-import Card from "./Card.js";
-import { render, fireEvent } from "@testing-library/react";
+import Card from "./Card.tsx";
+import { render } from "@testing-library/react";
 import TEST_IMAGES from "./_testCommon.js";
 
 it("renders without crashing", function () {
@@ -14,7 +14,7 @@ it("renders without crashing", function () {
 });
 
 it("matches snapshot", function () {
-  const { container, debug } = render(
+  const { container } = render(
     <Card
       caption={TEST_IMAGES[0].caption}
       src={TEST_IMAGES[0].src}
